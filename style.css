@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
   --primary-color: #fa7436;
@@ -34,21 +34,15 @@ nav {
   padding: 0 20px;
 }
 
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1400px;
-  }
-}
-
-/* @media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-} */
-
 @media (min-width: 767px) {
   .container {
     padding: 0 30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
   }
 }
 
@@ -207,6 +201,7 @@ a {
   .explore_form form {
     grid-template-columns: 1fr;
     padding: 25px 20px;
+    justify-items: center;
   }
 }
 
@@ -216,10 +211,25 @@ a {
   gap: 20px;
 }
 
+@media (max-width: 767px) {
+  .form_inputs {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+}
+
 .form_action {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .form_action {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+    align-items: center;
+  }
 }
 
 .form_action select {
@@ -246,6 +256,13 @@ a {
   max-width: 75px;
   background: url("arrow.svg") no-repeat;
   background-position: 99% 5%;
+}
+
+@media (max-width: 767px) {
+  .guest {
+    width: 70px;
+    background-position: 108% 5%;
+  }
 }
 
 .form_action option {
@@ -826,6 +843,25 @@ form button {
   color: var(--primary-background-color);
 }
 
+@media (max-width: 991px) {
+  .subscribe h3 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe h3 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 567px) {
+  .subscribe h3 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
 .subscribe form {
   width: 100%;
   max-width: 700px;
@@ -839,15 +875,40 @@ form button {
   z-index: 1;
 }
 
+@media (max-width: 567px) {
+  .subscribe form {
+    padding: 30px 20px;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+}
+
 .subscribe_form_action {
   flex: 1 1;
   display: flex;
   align-items: center;
 }
 
+@media (max-width: 567px) {
+  .subscribe_form_action {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px #eee;
+  }
+}
+
 .subscribe_form_action label {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 567px) {
+  .subscribe_form_action label {
+    display: none;
+  }
 }
 
 .subscribe_form_action input {
@@ -857,12 +918,25 @@ form button {
   border: none;
 }
 
+@media (max-width: 567px) {
+  .subscribe_form_action input {
+    width: 100%;
+  }
+}
+
 .subscribe_btn {
   width: 130px;
   height: 50px;
   border: none;
   box-shadow: 0 0 2px var(--primary-color);
   border-radius: 8px;
+}
+
+@media (max-width: 567px) {
+  .subscribe_btn {
+    width: 150px;
+    height: 45px;
+  }
 }
 
 .spiral {
