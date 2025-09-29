@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Agency Landing Page</title>
+  <!-- Link to external stylesheet for all page styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- =======================
+       Header & Navigation
+       Contains site logo, navigation links, and authentication buttons
+  ======================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="main-nav" aria-label="Main navigation">
+        <!-- Site Logo -->
+        <a href="/" class="site-logo">
+          Trabook
+          <img src="images/trabook-brand-logo.png" alt="Trabook brand logo" />
+        </a>
+        <!-- Main Navigation Links -->
+        <ul class="nav-list" role="menubar">
+          <li class="nav-list-item">
+            <a href="#" class="nav-link" role="menuitem">Home</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link" role="menuitem">About</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link" role="menuitem">Destination</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link" role="menuitem">Tour</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link" role="menuitem">Blog</a>
+          </li>
+        </ul>
+        <!-- Authentication Links -->
+        <div class="auth-group">
+          <a href="#" class="auth-link auth-link-login">Login</a>
+          <a href="#" class="auth-link auth-link-signup">Sign up</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =======================
+       Hero Section
+       Main landing section with headline, description, and illustration
+  ======================== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero-content">
+        <!-- Hero Text Content -->
+        <div class="hero-text">
+          <h1 id="hero-title" class="hero-title">
+            Get started your exciting
+            <span class="hero-highlight">journey</span> with us.
+          </h1>
+          <p class="hero-desc">
+            A Team of experienced tourism professionals will provide you with
+            the best advice and tips for your desire place.
+          </p>
+          <a href="#" class="hero-button">Discover Now</a>
+        </div>
+        <!-- Hero Image -->
+        <div class="hero-image">
+          <img src="images/trabook-destination-illustration.png" alt="Trabook destination illustration" />
+        </div>
+      </div>
+      <!-- =======================
+           Explore Form Section
+           Form for selecting location, date, and guest count
+      ======================== -->
+      <section class="explore-form" aria-label="Explore trips">
+        <form class="explore-form-form" autocomplete="off">
+          <div class="form-inputs">
+            <!-- Location Select -->
+            <div class="form-group">
+              <div class="select-group">
+                <select name="location" id="location" class="location">
+                  <option value="">Location</option>
+                  <option value="asia">Asia</option>
+                  <option value="africa">Africa</option>
+                  <option value="north-america">North America</option>
+                  <option value="south-america">South America</option>
+                  <option value="antarctica">Antarctica</option>
+                  <option value="europe">Europe</option>
+                  <option value="australia">Australia</option>
+                </select>
+                <img src="images/dropdown-vector.png" alt="Dropdown vector" />
+              </div>
+              <label for="location">Where are you going</label>
+            </div>
+            <!-- Date Select -->
+            <div class="form-group">
+              <div class="select-group">
+                <select name="date" id="date" class="date">
+                  <option value="">Date</option>
+                  <option value="3-days">In 3 days</option>
+                  <option value="next-week">Next week</option>
+                  <option value="next-month">Next month</option>
+                </select>
+                <img src="images/dropdown-vector.png" alt="Dropdown vector" />
+              </div>
+              <label for="date">When you will go</label>
+            </div>
+            <!-- Guest Select -->
+            <div class="form-group">
+              <div class="select-group">
+                <select name="guest" id="guest">
+                  <option value="">Guest</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                </select>
+                <img src="images/dropdown-vector.png" alt="Dropdown vector" />
+              </div>
+              <label for="guest">Number of guest</label>
+            </div>
+          </div>
+          <button type="submit" class="explore-form-button">
+            Explore Now
+          </button>
+        </form>
+      </section>
+    </div>
+  </section>
+
+  <main>
+    <!-- =======================
+         Vacation Plans Section
+         Highlights steps for planning a vacation
+    ======================== -->
+    <section class="vacation-plans">
+      <div class="container">
+        <div class="section-title">
+          <div class="section-title-text">
+            <h2 class="section-title-heading">
+              Things you need
+              <span class="section-title-highlight">to do</span>
+            </h2>
+            <p class="section-title-desc">
+              We ensure that you’ll embark on a perfectly planned, safe
+              vacation at a price you can afford.
+            </p>
+          </div>
+          <!-- Decorative element for section title -->
+          <img src="./images/things-you-need-to-do-element.png" alt="Things you need to do element"
+            class="section-title-element" />
+        </div>
+        <div class="vacation-steps">
+          <!-- Step 1 -->
+          <article class="vacation-step">
+            <img src="./images/sign-up.png" alt="Sign up icon" />
+            <h3 class="vacation-step-title">Sign Up</h3>
+            <p class="vacation-step-desc">
+              Completes all the work associated with planning and processing
+            </p>
+            <img src="./images/sign-up-vector.png" alt="Sign up vector" class="step-vector" />
+          </article>
+          <!-- Step 2 -->
+          <article class="vacation-step">
+            <img src="./images/worth-of-money.png" alt="Worth of money icon" />
+            <h3 class="vacation-step-title">Worth of Money</h3>
+            <p class="vacation-step-desc">
+              After successful access then book from exclusive deals &amp;
+              pricing
+            </p>
+            <img src="./images/worth-of-money-vector.png" alt="Worth of money vector" class="step-vector" />
+          </article>
+          <!-- Step 3 -->
+          <article class="vacation-step">
+            <img src="./images/exciting-travel.png" alt="Exciting travel icon" />
+            <h3 class="vacation-step-title">Exciting Travel</h3>
+            <p class="vacation-step-desc">
+              Start and explore a wide range of exciting travel experience.
+            </p>
+            <img src="./images/exciting-travel-vector.png" alt="Exciting travel vector" class="step-vector" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================
+         Deals Section
+         Displays exclusive deals and discounts
+    ======================== -->
+    <section class="deals-section">
+      <div class="container">
+        <div class="deals-header">
+          <h2 class="deals-section-heading">
+            Exclusive
+            <span class="deals-section-highlight">deals &amp; discounts</span>
+          </h2>
+          <p class="deals-section-desc">
+            Discover our fantastic early booking discounts &amp; start planning
+            your journey.
+          </p>
+        </div>
+        <div class="deals-cards">
+          <!-- Deal Card 1 -->
+          <article class="card">
+            <button class="card-button">Book Now</button>
+            <img src="./images/madrid.png" alt="Madrid Image" />
+            <div class="card-title-row">
+              <span class="card-title">Madrid</span>
+              <div class="card-rating-group">
+                <img src="./images/star-vector.png" alt="Star icon" class="card-star-icon" />
+                <span class="card-rating">4.8</span>
+              </div>
+            </div>
+            <div class="card-info-row">
+              <div class="card-location-group">
+                <img src="./images/location-vector.png" alt="Location icon" class="card-location-icon" />
+                <span class="card-location">Spain</span>
+              </div>
+              <div class="card-price-group">
+                <span class="card-old-price">$950</span>
+                <span class="card-new-price">$850</span>
+              </div>
+            </div>
+          </article>
+          <!-- Deal Card 2 -->
+          <article class="card">
+            <button class="card-button">Book Now</button>
+            <img src="./images/firenze.png" alt="Firenze Image" />
+            <div class="card-title-row">
+              <span class="card-title">Firenze</span>
+              <div class="card-rating-group">
+                <img src="./images/star-vector.png" alt="Star icon" class="card-star-icon" />
+                <span class="card-rating">4.5</span>
+              </div>
+            </div>
+            <div class="card-info-row">
+              <div class="card-location-group">
+                <img src="./images/location-vector.png" alt="Location icon" class="card-location-icon" />
+                <span class="card-location">Italy</span>
+              </div>
+              <div class="card-price-group">
+                <span class="card-old-price">$850</span>
+                <span class="card-new-price">$750</span>
+              </div>
+            </div>
+          </article>
+          <!-- Deal Card 3 -->
+          <article class="card">
+            <button class="card-button">Book Now</button>
+            <img src="./images/paris.png" alt="Paris Image" />
+            <div class="card-title-row">
+              <span class="card-title">Paris</span>
+              <div class="card-rating-group">
+                <img src="./images/star-vector.png" alt="Star icon" class="card-star-icon" />
+                <span class="card-rating">4.4</span>
+              </div>
+            </div>
+            <div class="card-info-row">
+              <div class="card-location-group">
+                <img src="./images/location-vector.png" alt="Location icon" class="card-location-icon" />
+                <span class="card-location">France</span>
+              </div>
+              <div class="card-price-group">
+                <span class="card-old-price">$699</span>
+                <span class="card-new-price">$599</span>
+              </div>
+            </div>
+          </article>
+          <!-- Deal Card 4 -->
+          <article class="card">
+            <button class="card-button">Book Now</button>
+            <img src="./images/london.png" alt="London Image" />
+            <div class="card-title-row">
+              <span class="card-title">London</span>
+              <div class="card-rating-group">
+                <img src="./images/star-vector.png" alt="Star icon" class="card-star-icon" />
+                <span class="card-rating">4.8</span>
+              </div>
+            </div>
+            <div class="card-info-row">
+              <div class="card-location-group">
+                <img src="./images/location-vector.png" alt="Location icon" class="card-location-icon" />
+                <span class="card-location">UK</span>
+              </div>
+              <div class="card-price-group">
+                <span class="card-old-price">$850</span>
+                <span class="card-new-price">$850</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Deals Section Navigation Buttons -->
+        <div class="deals-navigation">
+          <img src="./images/left-button.png" alt="Left Button Icon" class="deals-left-button" />
+          <img src="./images/right-button.png" alt="Right Button Icon" class="deals-right-button" />
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================
+         Best Vacation Plan Section
+         Highlights top vacation plans with cards and navigation
+    ======================== -->
+    <section class="best-vacation-section">
+      <div class="container">
+        <div class="section-title">
+          <div class="best-vacation-section-header">
+            <h2 class="section-title-heading">
+              Best <span class="section-title-highlight">vacation plan</span>
+            </h2>
+            <p class="section-title-desc">
+              Plan your perfect vacation with our travel agency. Choose among
+              hundreds of all-inclusive offers!
+            </p>
+          </div>
+          <!-- Decorative element for section title -->
+          <img src="./images/best-vacation-plan-element.png" alt="Best vacation plan element"
+            class="section-title-element" />
+          <!-- Vacation Plan Navigation Buttons -->
+          <div class="best-vacation-navigation">
+            <img src="./images/left-button.png" alt="Left Button Icon" class="best-vacation-left-button" />
+            <img src="./images/right-button.png" alt="Right Button Icon" class="best-vacation-right-button" />
+          </div>
+        </div>
+        <div class="cards-list">
+          <!-- Vacation Card 1 -->
+          <article class="best-vacation-card">
+            <button class="card-button">Book Now</button>
+            <img src="./images/rome-italy.png" alt=" Rome Italy Image" />
+            <div class="best-vacation-card-content">
+              <div class="best-vacation-card-details">
+                <span class="best-vacation-card-location">Rome, Italy</span>
+                <span class="best-vacation-card-price">$5,42k</span>
+              </div>
+              <div class="best-vacation-card-info">
+                <div class="best-vacation-card-title-row">
+                  <img src="./images/navigation-vector.png" alt="Navigation Icon" class="navigation-icon" />
+                  <span class="card-plan">10 Days Trip</span>
+                </div>
+                <div class="best-vacation-card-info-row">
+                  <img src="./images/star-vector.png" alt="Star Icon" class="star-vector" />
+                  <span class="best-vacation-card-rating">4.8</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Vacation Card 2 -->
+          <article class="best-vacation-card">
+            <button class="card-button">Book Now</button>
+            <img src="./images/london-uk.png" alt=" London UK Image" />
+            <div class="best-vacation-card-content">
+              <div class="best-vacation-card-details">
+                <span class="best-vacation-card-location">London, UK</span>
+                <span class="best-vacation-card-price">$2,42k</span>
+              </div>
+              <div class="best-vacation-card-info">
+                <div class="best-vacation-card-title-row">
+                  <img src="./images/navigation-vector.png" alt="Navigation Icon" class="navigation-icon" />
+                  <span class="card-plan">07 Days Trip</span>
+                </div>
+                <div class="best-vacation-card-info-row">
+                  <img src="./images/star-vector.png" alt="Star Icon" class="star-vector" />
+                  <span class="best-vacation-card-rating">4.7</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Vacation Card 3 -->
+          <article class="best-vacation-card">
+            <button class="card-button">Book Now</button>
+            <img src="./images/osaka-japan.png" alt=" Osaka Japan Image" />
+            <div class="best-vacation-card-content">
+              <div class="best-vacation-card-details">
+                <span class="best-vacation-card-location">Osaka, Japan</span>
+                <span class="best-vacation-card-price">$5,42k</span>
+              </div>
+              <div class="best-vacation-card-info">
+                <div class="best-vacation-card-title-row">
+                  <img src="./images/navigation-vector.png" alt="Navigation Icon" class="navigation-icon" />
+                  <span class="card-plan">10 Days Trip</span>
+                </div>
+                <div class="best-vacation-card-info-row">
+                  <img src="./images/star-vector.png" alt="Star Icon" class="star-vector" />
+                  <span class="best-vacation-card-rating">4.8</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================
+         Testimonials Section
+         Displays client testimonials and navigation
+    ======================== -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials-section-content">
+          <div class="testimonials-section-title">
+            <div class="testimonials-header">
+              <h3 class="testimonials-title">
+                What people say
+                <span class="testimonials-highlight">about Us.</span>
+              </h3>
+              <p class="testimonials-desc">
+                Our Clients send us bunch of smilies with our services and we
+                love them.
+              </p>
+            </div>
+            <!-- Testimonials Navigation Buttons -->
+            <div class="testimonials-navigation">
+              <img src="./images/left-button.png" alt="Left Button Icon" class="deals-left-button" />
+              <img src="./images/right-button.png" alt="Right Button Icon" class="deals-right-button" />
+            </div>
+          </div>
+          <div class="testimonials-list">
+            <!-- Testimonial 1 -->
+            <article class="testimonials-card">
+              <img src="./images/person.png" alt="Person Image" class="person-image" />
+              <div>
+                <blockquote class="testimonials-card-quote">
+                  "On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no."
+                </blockquote>
+                <p class="testimonials-card-name">Mike taylor</p>
+                <p class="testimonials-card-location">Lahore, Pakistan</p>
+              </div>
+            </article>
+            <!-- Testimonial 2 -->
+            <article class="testimonials-card">
+              <img src="./images/person.png" alt="Person Image" class="person-image" />
+              <div>
+                <blockquote class="testimonials-card-quote">
+                  "On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no."
+                </blockquote>
+                <p class="testimonials-card-name">Mike taylor</p>
+                <p class="testimonials-card-location">Lahore, Pakistan</p>
+              </div>
+            </article>
+          </div>
+          <!-- Decorative element for testimonials section -->
+          <img src="./images/what-people-say-about-us-element.png" alt="What people say about Us element"
+            class="testimonials-section-title-element" />
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================
+         Blog Section
+         Displays latest blog posts
+    ======================== -->
+    <section class="blog-section">
+      <div class="container">
+        <div class="blog-section-content">
+          <h2 class="blog-section-heading">
+            Get update with
+            <span class="section-title-highlight">latest blog</span>
+          </h2>
+          <div class="blog-list">
+            <!-- Blog Card 1 -->
+            <article class="blog-card">
+              <img src="./images/amazing-difference.png" alt="The Amazing Difference a Year of Travelling" />
+              <h4 class="blog-card-title">
+                The Amazing Difference a Year of Travelling .
+              </h4>
+              <p class="blog-card-date">July 27, 2021</p>
+            </article>
+            <!-- Blog Card 2 -->
+            <article class="blog-card">
+              <img src="./images/travel-far-enough.png" alt="Travel far enough, you meet yourself" />
+              <h4 class="blog-card-title">
+                Travel far enough, you meet yourself.
+              </h4>
+              <p class="blog-card-date">July 27, 2021</p>
+            </article>
+            <!-- Blog Card 3 -->
+            <article class="blog-card">
+              <img src="./images/save-money.png" alt="How to Save Money While Visiting Africa" />
+              <h4 class="blog-card-title">
+                How to Save Money While Visiting Africa .
+              </h4>
+              <p class="blog-card-date">July 27, 2021</p>
+            </article>
+            <!-- Blog Card 4 -->
+            <article class="blog-card">
+              <img src="./images/reflections.png" alt="Reflections on 5 Months of Travel: Time to Hang" />
+              <h4 class="blog-card-title">
+                Reflections on 5 Months of Travel: Time to Hang
+              </h4>
+              <p class="blog-card-date">July 27, 2021</p>
+            </article>
+          </div>
+          <!-- Blog Slider Navigation -->
+          <div class="blog-slider-group">
+            <img src="./images/slider-logo.png" alt="Slider logo" class="blog-slider" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================
+         Newsletter Section
+         Subscription form for exclusive deals and offers
+    ======================== -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <p class="newsletter-title">
+            Subscribe and get exclusive deals &amp; offer
+          </p>
+          <!-- Decorative elements for newsletter section -->
+          <img src="./images/subscribe-and-get-exclusive-deals-offer-element.png"
+            alt="Subscribe and get exclusive deals & offer element" class="newsletter-element" />
+          <img src="./images/subscribe-and-get-exclusive-deals-offer-group.png"
+            alt="Subscribe and get exclusive deals & offer group" class="newsletter-group" />
+          <!-- Newsletter Subscription Form -->
+          <form class="newsletter-form" autocomplete="off">
+            <div class="newsletter-input-group">
+              <label for="newsletter-email">
+                <img src="./images/email-vector.png" alt="Email icon" />
+              </label>
+              <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Enter your mail"
+                required />
+            </div>
+            <button type="submit" class="newsletter-button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================
+       Footer Section
+       Contains brand, navigation, social links, and legal info
+  ======================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer-content">
+        <div class="site-footer-brand-group">
+          <!-- Footer Brand and Socials -->
+          <div class="site-footer-brand">
+            <span class="site-footer-logo">Trabook</span>
+            <img src="./images/trabook-brand-logo-vector.png" alt="Trabook brand logo" />
+          </div>
+          <p class="site-footer-desc">
+            Book your trip in minutes, get full control for much longer.
+          </p>
+          <div class="site-footer-socials">
+            <a href="#" aria-label="Facebook">
+              <img src="./images/facebook-logo.png" alt="Facebook logo" />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img src="./images/instagram-logo.png" alt="Instagram logo" />
+            </a>
+            <a href="#" aria-label="Twitter">
+              <img src="./images/twitter-logo.png" alt="Twitter logo" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Navigation Links -->
+        <nav class="site-footer-nav" aria-label="Footer navigation">
+          <div class="site-footer-nav-section">
+            <h2 class="site-footer-nav-title">Company</h2>
+            <ul class="site-footer-nav-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Logistic</a></li>
+              <li><a href="#">Privacy &amp; Policy</a></li>
+            </ul>
+          </div>
+          <div class="site-footer-nav-section">
+            <h2 class="site-footer-nav-title">Contact</h2>
+            <ul class="site-footer-nav-list">
+              <li><a href="#">Help/FAQ</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Affiliates</a></li>
+            </ul>
+          </div>
+          <div class="site-footer-nav-section">
+            <h2 class="site-footer-nav-title">More</h2>
+            <ul class="site-footer-nav-list">
+              <li><a href="#">Press Centre</a></li>
+              <li><a href="#">Our Blog</a></li>
+              <li><a href="#">Low fare tips</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <hr class="site-footer-line" />
+      <!-- Footer Legal Info -->
+      <div class="site-footer-legal">
+        <p>Copyright, Trabook 2022. All rights reserved.</p>
+        <div class="site-footer-legal-links">
+          <a href="#"> Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
