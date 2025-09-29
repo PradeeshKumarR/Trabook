@@ -745,6 +745,7 @@ body {
   width: 90%;
   font-size: 1.5rem;
   font-weight: 500;
+  padding: 1rem 0;
 }
 
 .best-vacation-card-location {
@@ -1499,3 +1500,4 @@ img {
 }
 
 /* End of file */
+
