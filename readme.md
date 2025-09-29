@@ -19,7 +19,7 @@ This project is a single responsive landing page for a travel agency, built usin
 
 1. **Clone the repository:**
    ```sh
-   git clone [your-repo-url]
+   git clone https://github.com/PradeeshKumarR/Trabook.git
    cd [project-folder]
    ```
 
